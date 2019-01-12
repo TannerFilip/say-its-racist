@@ -1,18 +1,19 @@
 {
 	"manifest_version": 2,
-	"name": "xkcd substitutions",
-	"version": "1.1",
+	"name": "say it's racist",
+	"version": "1.0",
 
-	"description": "Applies all xkcd substitutions from comics #1288, #1265, and #1679",
+	"description": "quit saying things are \"racially charged\" when you mean \"racist\"",
 
 	"icons": {
-		"48": "icons/icon-48.png"
+		"32": "icons/icon-32.png",
+		"192": "icons/icon-192.png"
 	},
 
 	"content_scripts": [
 		{
 			"matches": ["*://*/*"],
-			"js": ["substitutions.js"]
+			"js": ["say-its-racist.js"]
 		}
 	]
 }
